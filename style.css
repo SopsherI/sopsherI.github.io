@@ -1,6 +1,6 @@
 body {
-    background: rgb(17, 9, 9);
-    color: rgb(2, 1, 1);
+    background: rgb(0, 0, 0);
+    color: rgb(252, 0, 0);
     padding: 10px;
     font-family: arial;
 }
@@ -11,7 +11,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(24, 8, 4);
+    background: rgb(255, 9, 9);
    margin: 0 auto;
     display: flex;
     padding: 10px;
@@ -19,7 +19,7 @@ nav {
 h1 {
     display: flex;
     align-items: center;
-    color: rgb(230, 17, 17);
+    color: rgb(255, 248, 248);
     flex: 1;
     margin: 0;
 }
@@ -32,12 +32,12 @@ h1 {
 }
 a {
     text-decoration: none;
-    color: #dd1111;
+    color: #000000;
 }
 
 /* main container area beneath menu */
 main {
-    background: #f10c0c;
+    background: #ff0000;
     display: flex;
 }
 .sidebar {
@@ -51,12 +51,78 @@ main {
     flex: 1;
     padding: 15px;
 }
-
-/* portfolio styles */
-#interests {
-    border: 4px rgb(0, 0, 0) ridge;
-    padding: 8px;
+    
+   /* portfolio styles */
+   .content h1 {
+    color: rgb(0, 0, 0);
 }
-h2, h3 {
-    margin: 0px;
+
+#portfolio {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#portfolio li {
+    background: #b33c3c;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#portfolio li:hover {
+    background: #f80000;
+}
+
+#portfolio a {
+    text-decoration: none;
+    color: #000000;
+}
+/* responsive web design */
+@media screen and (min-width: 120px) and (max-width: 1080px) {
+    main {
+      height: 100ch;
+      zoom: 1.5;
+      display: grid;
+    }
+
+    h1 {
+      font-size: 44px;
+    }
+
+    h2 {
+      font-size: 42px;
+    }
+
+    h3 {
+      font-size: 36px;
+    }
+
+    #all-contents {
+      height: 100ch;
+      margin: none;
+    }
+
+    a {
+      font-size: 42px;
+    }
+
+    .sidebar {
+      margin-right: 0px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sidebar-img {
+      width: 100%;
+    }
+
+    p,
+    li {
+      font-size: 24px;
+    }
+
+    .content {
+      align-content: center;
+      justify-content: center;
+    }
 }
